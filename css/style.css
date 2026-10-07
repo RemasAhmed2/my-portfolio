@@ -1,0 +1,81 @@
+/*     
+  general page style 
+*/
+html , body {
+    height : 100% ;
+    width : 100% ;
+    margin : 0px;
+    padding : 0px ;
+}
+
+*{
+    box-sizing: border-box;
+    font-family :Georgia, 'Times New Roman', Times, serif ;
+}
+/* 
+Navigation bar 
+*/
+
+.nav-bar{
+    border : 0px;
+    background-color: rgba(85, 57, 112, 0.808);
+
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 1030;
+    padding-left: 20px;
+    padding-right: 20px;
+    height : 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color:beige;
+}
+
+.nav-bar ul {
+  list-style: none;           /* remove bullets */
+  margin: 0;
+  padding: 0;
+  display: flex;              /* horizontal links */
+  gap: 1.5rem;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: beige;
+}
+
+/* push the page content below the fixed bar */
+body {
+  padding-top: 60px;          /* same as the nav-bar height */
+}
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+}
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid beige;
+    padding: 8px 12px;
+}
+
+th {
+    background-color: rgb(85, 57, 112);
+    color: beige;
+}
